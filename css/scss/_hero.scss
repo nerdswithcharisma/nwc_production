@@ -10,6 +10,10 @@ Hero Styles
     @include background-size(cover);
     
     
+        #home{
+            padding-bottom: 55px;
+        }
+
         h1{
             margin-top: 60px;
             color: $white;

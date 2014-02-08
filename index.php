@@ -157,7 +157,7 @@
           
           <section id="hero">
             <div class="row">
-                <div class="container text-center">
+                <div id="home" class="container text-center">
                     <h1>NERDS</h1>
                     <hr />
                     <h2>We're the best in the world<br /> at what we do.</h2>

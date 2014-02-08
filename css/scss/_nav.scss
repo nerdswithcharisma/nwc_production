@@ -130,4 +130,9 @@ header{
     strong{
         color: $nwc-dark;    
     }
+
+    @media #{$mq-phone}{
+        font-size: 1.4em;    
+        line-height: 1.4em;
+    }
 }

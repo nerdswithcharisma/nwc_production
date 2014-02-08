@@ -70,7 +70,7 @@ html {
 
 /* line 18, scss/_base.scss */
 body, #pushContent {
-  height: 100%;
+  min-height: 100%;
   background: #373a3b;
 }
 
@@ -466,6 +466,13 @@ header #nav-toggle {
 #services strong {
   color: #373a3b;
 }
+@media only screen and (max-width: 480px) {
+  /* line 126, scss/_nav.scss */
+  #services {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+}
 
 /* nav and menus */
 /*********************
@@ -483,11 +490,15 @@ Hero Styles
   background-size: cover;
 }
 /* line 13, scss/_hero.scss */
+#hero #home {
+  padding-bottom: 55px;
+}
+/* line 17, scss/_hero.scss */
 #hero h1 {
   margin-top: 60px;
   color: white;
 }
-/* line 18, scss/_hero.scss */
+/* line 22, scss/_hero.scss */
 #hero hr {
   width: 50%;
   border-color: #a825ea;
