@@ -1,0 +1,83 @@
+/******************************************************************
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of Sass' great features:
+Mixins & Constants. 
+******************************************************************/
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+$black:             #000;
+$white:             #fff;
+$off-white:         #fcf9fa;
+$grey:              #999;
+
+$nwc-purple:        #7540e3;
+$nwc-purple-light:  #a825ea;
+$nwc-blue-grey:     #363f48;
+$nwc-dark:          #373a3b;
+$nwc-medium:        #b6b6b6;
+$nwc-light:         #f2f2f2;
+
+$open-sans:         'Open Sans', Sans-Serif;
+$uniform-margin:    70px;
+
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+
+
+//media queries
+$mq-phone: "only screen and (max-width : 480px)";
+$mq-tablet-h: "only screen and (min-width : 481px) and (max-width : 768px)";
+$mq-tablet-v: "only screen and (min-width : 769px) and (max-width : 1024px)";
+$mq-desktop: "only screen and (min-width : 1025px) and (max-width : 1300px)";
+$mq-xl: "only screen and (min-width : 1301px)";
+
+
+// positionings
+%top-right{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 25px;
+}
+
+%top-left{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 25px;
+}
+
+%bottom-right{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;    
+    margin: 25px;
+}
+
+%bottom-left{
+    position: absolute;
+    bottom: 10px;
+    left: 10px; 
+    margin: 25px;
+}
+
+%fixed-bottom-right{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+%fixed-bottom-left{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}

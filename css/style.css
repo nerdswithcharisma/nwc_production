@@ -1,0 +1,796 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400italic);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+/******************************************************************
+Site Name: Nerds With Charisma
+Author: Brian Dausman - brian@nerdswithcharisma.com
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+******************************************************************/
+/******************************************************************
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of Sass' great features:
+Mixins & Constants. 
+******************************************************************/
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+/* line 45, scss/_mixins.scss */
+header #nav-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 25px;
+}
+
+/* line 52, scss/_mixins.scss */
+header h1, header #logo a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 25px;
+}
+
+/* line 79, scss/_mixins.scss */
+#top {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+/******************************************************************
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+******************************************************************/
+/*********************
+General
+*********************/
+/* line 13, scss/_base.scss */
+html {
+  font-family: "Open Sans", Sans-Serif;
+  height: 100%;
+}
+
+/* line 18, scss/_base.scss */
+body, #pushContent {
+  height: 100%;
+  background: #373a3b;
+}
+
+/* line 23, scss/_base.scss */
+a {
+  color: #7540e3;
+}
+/* line 26, scss/_base.scss */
+a:hover {
+  color: #a825ea;
+}
+
+/* line 31, scss/_base.scss */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 36, scss/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 40, scss/_base.scss */
+.no-padding-left {
+  padding-left: 0;
+}
+
+/* html and basic styles */
+/*********************
+Typography
+*********************/
+/* line 4, scss/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", Sans-Serif;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 11, scss/_typography.scss */
+h1, .h1 {
+  font-size: 21em;
+  color: #373a3b;
+  font-weight: 900;
+}
+@media only screen and (max-width: 480px) {
+  /* line 11, scss/_typography.scss */
+  h1, .h1 {
+    font-size: 6em;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 11, scss/_typography.scss */
+  h1, .h1 {
+    font-size: 10em;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* line 11, scss/_typography.scss */
+  h1, .h1 {
+    font-size: 15em;
+  }
+}
+
+/* line 29, scss/_typography.scss */
+h2, .h2 {
+  font-size: 3em;
+  font-weight: 100;
+  text-transform: capitalize;
+  font-family: "Raleway", "Open Sans", Sans-Serif;
+  margin: 30px 0;
+}
+@media only screen and (max-width: 480px) {
+  /* line 29, scss/_typography.scss */
+  h2, .h2 {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 29, scss/_typography.scss */
+  h2, .h2 {
+    font-size: 2em;
+    line-height: 1.4em;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* line 29, scss/_typography.scss */
+  h2, .h2 {
+    font-size: 2.5em;
+  }
+}
+
+/* line 50, scss/_typography.scss */
+h3, .h3 {
+  font-size: 3.7em;
+  font-weight: 900;
+}
+@media only screen and (max-width: 480px) {
+  /* line 50, scss/_typography.scss */
+  h3, .h3 {
+    font-size: 1.8em;
+    line-height: 1.8em;
+  }
+}
+
+/* line 59, scss/_typography.scss */
+h4, .h4 {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #999999;
+}
+@media only screen and (max-width: 480px) {
+  /* line 59, scss/_typography.scss */
+  h4, .h4 {
+    font-size: 0.875em;
+    line-height: 1.5em;
+  }
+}
+
+/* line 69, scss/_typography.scss */
+h5, .h5 {
+  font-style: italic;
+  color: #373a3b;
+  font-size: 2em;
+  font-family: serif;
+  margin-bottom: 45px;
+}
+@media only screen and (max-width: 480px) {
+  /* line 69, scss/_typography.scss */
+  h5, .h5 {
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+  }
+}
+
+/* line 83, scss/_typography.scss */
+h6, .h6 {
+  font-size: 1.7em;
+  font-weight: 800;
+  line-height: 65px;
+}
+
+/* headings, fonts, etc */
+/* line 1, scss/_buttons.scss */
+.btn {
+  font-size: 1.5em;
+  font-weight: 100;
+  font-family: "Raleway", "Open Sans", Sans-Serif;
+  padding: 10px 80px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+@media only screen and (max-width: 480px) {
+  /* line 1, scss/_buttons.scss */
+  .btn {
+    font-size: 1em;
+    padding: 10px 50px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 1, scss/_buttons.scss */
+  .btn {
+    font-size: 1.3em;
+  }
+}
+
+/* line 20, scss/_buttons.scss */
+.btn-default {
+  color: white;
+  text-shadow: none;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.1);
+}
+/* line 26, scss/_buttons.scss */
+.btn-default:hover {
+  background: #7540e3;
+  color: white;
+  border-color: #7540e3;
+}
+
+/* line 33, scss/_buttons.scss */
+.btn-nwc {
+  color: white;
+  text-shadow: none;
+  border: 1px solid #591fd1;
+  background: #7540e3;
+}
+/* line 39, scss/_buttons.scss */
+.btn-nwc:hover {
+  color: white;
+  background: 1px solid #591fd1;
+}
+
+/* buttons, dun */
+/* header navigation */
+/* line 2, scss/_nav.scss */
+header {
+  opacity: 0.4;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 8, scss/_nav.scss */
+header:hover {
+  opacity: 1;
+}
+/* line 12, scss/_nav.scss */
+header h1 {
+  margin: 0;
+  text-indent: -9999px;
+  width: 0;
+  height: 0;
+}
+/* line 20, scss/_nav.scss */
+header #logo a {
+  color: white;
+  font-size: 2.3em;
+}
+/* line 25, scss/_nav.scss */
+header #logo a div {
+  float: left;
+  margin-right: 10px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 32, scss/_nav.scss */
+header #logo a div:hover {
+  color: #7540e3;
+}
+/* line 38, scss/_nav.scss */
+header #nav-toggle {
+  color: white;
+  font-size: 1.7em;
+  cursor: pointer;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* back to top sticky */
+/* line 49, scss/_nav.scss */
+#top {
+  display: none;
+  cursor: pointer;
+  background: #373a3b;
+  color: white;
+  padding: 10px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 61, scss/_nav.scss */
+#top:hover {
+  background: #7540e3;
+}
+
+/* push nav */
+/* line 67, scss/_nav.scss */
+#pushNav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background-color: #fcf9fa;
+  padding: 50px;
+  overflow-y: scroll;
+  border-left: 4px solid #e3e0e1;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+@media only screen and (max-width: 480px) {
+  /* line 67, scss/_nav.scss */
+  #pushNav {
+    padding: 5px 15px;
+  }
+}
+/* line 92, scss/_nav.scss */
+#pushNav p {
+  color: #686e70;
+  line-height: 2em;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+/* line 98, scss/_nav.scss */
+#pushNav p strong {
+  color: #373a3b;
+}
+@media only screen and (max-width: 480px) {
+  /* line 92, scss/_nav.scss */
+  #pushNav p {
+    font-size: 1em;
+    line-height: 1.7em;
+  }
+}
+
+/* line 109, scss/_nav.scss */
+#pushContent {
+  position: relative;
+  z-index: 10;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+/* line 116, scss/_nav.scss */
+#pushContent.content--open {
+  -webkit-transform: translate3d(-80%, 0, 0);
+  -moz-transform: translate3d(-80%, 0, 0);
+  -ms-transform: translate3d(-80%, 0, 0);
+  -o-transform: translate3d(-80%, 0, 0);
+  transform: translate3d(-80%, 0, 0);
+}
+
+/* services */
+/* line 126, scss/_nav.scss */
+#services {
+  line-height: 2em;
+  color: #999999;
+}
+/* line 130, scss/_nav.scss */
+#services strong {
+  color: #373a3b;
+}
+
+/* nav and menus */
+/*********************
+Hero Styles
+*********************/
+/* line 4, scss/_hero.scss */
+#hero {
+  background: url(../images/hero-bg.jpg) no-repeat center center fixed;
+  color: white;
+  height: 100%;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 13, scss/_hero.scss */
+#hero h1 {
+  margin-top: 60px;
+  color: white;
+}
+/* line 18, scss/_hero.scss */
+#hero hr {
+  width: 50%;
+  border-color: #a825ea;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* homepage hero area */
+/*********************
+Portfolio
+*********************/
+/* line 4, scss/_portfolio.scss */
+#portfolio {
+  margin-bottom: 70px;
+}
+/* line 7, scss/_portfolio.scss */
+#portfolio .port-item span {
+  background: #7540e3;
+  display: block;
+  margin-top: -50px;
+}
+/* line 12, scss/_portfolio.scss */
+#portfolio .port-item span img {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 19, scss/_portfolio.scss */
+#portfolio .port-item span:hover img {
+  opacity: 0.4;
+}
+
+/* line 26, scss/_portfolio.scss */
+#portfolioItem {
+  display: none;
+  background: url(../images/loading.gif) center 150px no-repeat;
+  min-height: 300px;
+}
+/* line 31, scss/_portfolio.scss */
+#portfolioItem h1 {
+  color: #373a3b;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.24em;
+  font-size: 2.5em;
+  line-height: 1.08em;
+}
+/* line 41, scss/_portfolio.scss */
+#portfolioItem h2 {
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: 'PT Serif', serif;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: normal;
+  color: #363f48;
+}
+/* line 53, scss/_portfolio.scss */
+#portfolioItem h3 {
+  color: #b6b6b6;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+/* line 60, scss/_portfolio.scss */
+#portfolioItem p {
+  color: #999999;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.8em;
+  font-size: 1.1em;
+}
+
+/* line 68, scss/_portfolio.scss */
+#skills {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+/* line 73, scss/_portfolio.scss */
+#skills li {
+  list-style: none;
+  line-height: 2em;
+}
+
+/*********************
+Clients
+*********************/
+/* line 4, scss/_clients.scss */
+#clients {
+  background: url(../images/clients-bg.jpg) no-repeat center center fixed;
+  color: white;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 11, scss/_clients.scss */
+#clients .row {
+  background: rgba(54, 63, 72, 0.8);
+}
+/* line 15, scss/_clients.scss */
+#clients h1 {
+  color: white;
+}
+/* line 19, scss/_clients.scss */
+#clients h2 {
+  font-size: 1.9em;
+  line-height: 1.3em;
+}
+/* line 24, scss/_clients.scss */
+#clients hr {
+  width: 25%;
+  border-color: #a825ea;
+}
+
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+/** RESET AND LAYOUT
+===================================*/
+/* line 50, scss/_clients.scss */
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  *zoom: 1;
+}
+
+/* line 57, scss/_clients.scss */
+.bx-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+
+/** THEME
+===================================*/
+/* line 65, scss/_clients.scss */
+.bx-wrapper .bx-viewport {
+  left: -25px;
+  margin: 0;
+}
+
+/* line 71, scss/_clients.scss */
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+
+/* PAGER */
+/* line 78, scss/_clients.scss */
+.bx-controls-direction {
+  display: none;
+}
+
+/* line 80, scss/_clients.scss */
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
+}
+
+/* line 90, scss/_clients.scss */
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+/* line 96, scss/_clients.scss */
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #555;
+  opacity: 0.4;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 110, scss/_clients.scss */
+#clients .bx-wrapper {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+/* line 114, scss/_clients.scss */
+#clients a {
+  background: #fff;
+}
+
+/* line 119, scss/_clients.scss */
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  opacity: 1;
+}
+
+/*********************
+Contact
+*********************/
+/* line 4, scss/_contact.scss */
+#contact {
+  padding: 70px 0;
+  color: #b6b6b6;
+}
+/* line 8, scss/_contact.scss */
+#contact h4 {
+  color: #373a3b;
+}
+
+/* line 15, scss/_contact.scss */
+#blogStuff div {
+  padding: 0;
+}
+/* line 18, scss/_contact.scss */
+#blogStuff div img {
+  padding: 0 10px 10px 0;
+}
+
+/*********************
+Footer
+*********************/
+/* line 4, scss/_footer.scss */
+#footer {
+  margin-top: 60px;
+  font-size: 0.75em;
+}
+/* line 8, scss/_footer.scss */
+#footer i {
+  font-size: 2em;
+}
+@media only screen and (max-width: 480px) {
+  /* line 8, scss/_footer.scss */
+  #footer i {
+    font-size: 1.5em;
+  }
+}
+/* line 16, scss/_footer.scss */
+#footer a {
+  color: #373a3b;
+  padding: 15px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 23, scss/_footer.scss */
+#footer a:hover {
+  color: #a825ea;
+  text-decoration: none;
+}
+/* line 28, scss/_footer.scss */
+#footer a.link-alt {
+  color: #7540e3;
+}
+/* line 31, scss/_footer.scss */
+#footer a.link-alt:hover {
+  color: #a825ea;
+}
+@media only screen and (max-width: 480px) {
+  /* line 16, scss/_footer.scss */
+  #footer a {
+    padding: 10px;
+  }
+}
+/* line 41, scss/_footer.scss */
+#footer small {
+  color: #bfbfbf;
+}
