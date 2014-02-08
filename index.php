@@ -5,13 +5,12 @@
 <!--[if gt IE 8]><!--> <html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js"><!--<![endif]-->
 
     <head>
-        <title>Awesome Web Design | Nerds With Charisma - Brian Dausman, Andrew Bieganski</title>
+        <title>Awesome Web Design | Nerds With Charisma</title>
         
         <!-- meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="author" content="Brian Dausman - briandausman@gmail.com">
-        <meta name="HandheldFriendly" content="True">
         
         <!-- favicons -->
         <link rel="shortcut icon" href="images/favicon.ico">
@@ -108,7 +107,7 @@
         </div>  
           
         <h6>Portfolio</h6>
-        <p>We're currently getting our portfolio ready to go online. In the meantime, here's a few companies we've worked with in the past.</p>
+        <p>We're currently getting our portfolio ready to go online.</p>
           
           
           
@@ -135,8 +134,9 @@
                     
                     <p><small>copyright &copy; <?php echo date(Y); ?> | nerds with charisma</small></p>
                 </footer>
-            </div>  
       </nav>
+      
+      
       <div id="pushContent">
           <header>
             <h1 class="logo logo-white">
