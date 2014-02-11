@@ -25,12 +25,6 @@ of the styles inside media queries.
 
 @import "nav";              /* nav and menus */
 @import "hero";             /* homepage hero area */
+@import "footer";           /* footer */
 
-
-
-
-
-@import "portfolio";
-@import "clients";
-@import "contact";
-@import "footer";
+@import "blog";             /* blog styles */

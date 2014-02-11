@@ -16,7 +16,7 @@ html{
 }
 
 body, #pushContent{
-    min-height: 100%; 
+    height: 100%; 
     background: $nwc-dark;
 }
 
@@ -39,4 +39,8 @@ img{
 
 .no-padding-left{
     padding-left: 0;    
+}
+
+input{
+    -webkit-appearance: none;    
 }
