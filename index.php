@@ -115,7 +115,7 @@
                     <p>
                         <a href="https://twitter.com/nerdswcharisma" target="_blank"><i class="icon nwc-fontawesome-webfont"></i></a>
                     
-                        <a href="#"><i class="icon nwc-fontawesome-webfont-9"></i></a>
+                        <a href="https://www.facebook.com/nerdswithcharisma"><i class="icon nwc-fontawesome-webfont-9"></i></a>
                     
                         <a href="#"><i class="icon nwc-fontawesome-webfont-3"></i></a>
                     
