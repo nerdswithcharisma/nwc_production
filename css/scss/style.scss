@@ -10,15 +10,12 @@ and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
-
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400italic);
-
-@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic|Open+Sans:400,300,700,800|Raleway:400,100);
 
 @import "compass";
 @import "mixins";
 
+@import "bootstrap";        /* twitter bootstrap  */
 @import "base";             /* html and basic styles */
 @import "typography";       /* headings, fonts, etc */
 @import "buttons";          /* buttons, dun */
