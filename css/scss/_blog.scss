@@ -1,0 +1,105 @@
+#blog{
+    a{
+        @include transition-property(all);
+        @include transition-duration(.2s);
+        @include transition-timing-function(ease-in);
+
+        &:hover{
+            text-decoration: none;    
+        }
+    }
+
+    #pushContent{
+        background: $white; 
+        height: auto;
+    
+        &.content--open{
+            -webkit-transform: translate3d(-30%, 0, 0);
+            -moz-transform: translate3d(-30%, 0, 0);
+            -ms-transform: translate3d(-30%, 0, 0);
+            -o-transform: translate3d(-30%, 0, 0);
+            transform: translate3d(-30%, 0, 0);
+        }
+    }
+
+    #pushNav{
+        width: 30%;
+    }
+
+
+
+    /* header */
+    header{
+        opacity: 1;
+        height: 100px;
+    
+        #logo a{
+            color: $nwc-purple;        
+        }
+
+        #nav-toggle{
+            color: $nwc-medium;
+            text-shadow: none;
+        }
+    }
+
+    /* article */
+    article{
+        
+        hr{
+            margin: 10% 0;
+            border-bottom: 3px solid $nwc-light;
+        }   
+
+        &:last-child hr{
+            margin-bottom: 0;
+        }
+    
+    
+        .loop-thumbnail{
+            margin-bottom: 3%;
+        
+            @include transition-property(all);
+            @include transition-duration(.2s);
+            @include transition-timing-function(ease-in);
+        
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+
+        h6{
+            line-height: inherit;
+            margin: 0;
+            margin-bottom: 3%;
+            
+            a{
+                color: $nwc-blue-grey;
+        
+                &:hover{
+                    color: $nwc-purple;
+                }
+            }
+        }
+
+        p {
+            color: lighten( $nwc-dark, 20% );
+            line-height: 1.6em;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .loop-excerpt a{
+            color: $black;
+            border-bottom: 2px solid $nwc-purple;
+            padding: 6px 0;
+            text-transform: capitalize;
+    
+            &:hover{
+                color: $nwc-purple;
+                border-color: $black;
+            }
+        }
+        
+    }
+}

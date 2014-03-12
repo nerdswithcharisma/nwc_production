@@ -55,7 +55,7 @@
         <h6>What</h6>
           
         <p>
-            We utilize the latest technologies &amp; tools to get your site setup and stay up. Our help doesn't stop at just a website. Sure, we can help design &amp; develop your site, but we will also discuss and explain your user's experience, come up with a content strategy for continued success, get you going on social media , decypher new technologies, go over analytics, and get your SEO flowing.
+            We utilize the latest technologies &amp; tools to get your site setup and stay up. Our help doesn't stop at just a website. Sure, we can help design &amp; develop your site, but we will also discuss and explain your user's experience, come up with a content strategy for continued success, get you going on social media , decipher new technologies, go over analytics, and get your SEO flowing.
         </p>
          
         <h6>How</h6>
@@ -115,6 +115,8 @@
                         <a href="https://twitter.com/nerdswcharisma" target="_blank"><i class="icon nwc-fontawesome-webfont"></i></a>
                     
                         <a href="https://www.facebook.com/nerdswithcharisma"><i class="icon nwc-fontawesome-webfont-9"></i></a>
+                        
+                        <a href="https://plus.google.com/102309522200685923199/posts"><i class="icon nwc-fontawesome-webfont-6"></i></a>
                     
                         <a href="#"><i class="icon nwc-fontawesome-webfont-3"></i></a>
                     
