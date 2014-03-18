@@ -41,3 +41,16 @@
         background: 1px solid darken( $nwc-purple, 10% );
     }
 }
+
+.btn-alt{
+    font-family: $open-sans;
+    font-size: 1em;
+    background: $nwc-purple;    
+    color: $white;
+    border-color: $nwc-purple;
+    
+    &:hover{
+        color: $nwc-purple;
+        background: none;
+    }
+}

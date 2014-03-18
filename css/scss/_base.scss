@@ -44,3 +44,27 @@ img{
 input{
     -webkit-appearance: none;    
 }
+
+.form-control{
+    box-shadow: none;
+    border: 1px solid darken ( $off-white, 1% );
+    background: $off-white;
+    padding: 20px;
+    @include border-radius(0);
+
+    &:focus{
+        background: $white;
+        border: 1px solid $nwc-purple;
+        -webkit-appearance: none;
+        @include box-shadow(none);
+    }
+}
+
+/* color helpers */
+.dull{
+    color: $nwc-medium;    
+}
+
+.dark{
+    color: $nwc-blue-grey;    
+}

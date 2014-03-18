@@ -41,6 +41,14 @@ $mq-desktop: "only screen and (min-width : 1025px) and (max-width : 1300px)";
 $mq-xl: "only screen and (min-width : 1301px)";
 
 
+// fixed background image
+%fixed-bg{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 // positionings
 %top-right{
     position: absolute;

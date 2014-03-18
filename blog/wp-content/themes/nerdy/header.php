@@ -47,7 +47,7 @@
         <!-- Push Navigation 
         ================================================== -->   
         <nav id="pushNav">
-            <?php bones_main_nav(); ?>
+            <?php /* bones_main_nav(); */ ?>
             <?php get_sidebar(); ?>  
         </nav>
         
@@ -55,7 +55,7 @@
 		<!-- Primary Page Layout
         ================================================== -->   
         <div id="pushContent">
-            <header>
+            <header id="header">
                 <h1 class="logo logo-white">
                     <a href="/">Nerds With Charisma</a>  
                 </h1>
