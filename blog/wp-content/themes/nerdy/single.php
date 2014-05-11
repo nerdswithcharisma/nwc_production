@@ -29,33 +29,33 @@
         <div class="container">
             <article id="post-<?php the_ID(); ?>" <?php post_class('single-article clearfix'); ?>>
             
-                
-                <br /><br />
-                <section class="pull-right dull">
-                    <small>
-                        <?php the_date(); ?>
-                        <?php the_tags('', ', ', ''); ?>
-                    </small>
-                </section>
-                
-                <?php /* content */ ?>
-                <br /><br />
-                
-                
-                <section class="dark">
-                    <?php the_content(); ?>
-                </section>
-                
-                <hr />
-                
-                <?php /* comments */ ?>
-                <?php comments_template(); ?>
-                
-                <!-- <?php /* post infor */ ?>
-                <?php the_author(); ?>
-				<?php the_date(); ?>
-				<?php the_category(', '); ?>
-				<?php the_tags('', ', ', ''); ?> -->
+                <div class="col-xs-8">
+                    <br /><br />
+                    <section class="pull-right dull">
+                        <small>
+                            <?php the_date(); ?>
+                            <?php the_tags('', ', ', ''); ?>
+                        </small>
+                    </section>
+                    
+                    <?php /* content */ ?>
+                    <br /><br />
+                    <section class="the-content dark">
+                        <?php the_content(); ?>
+                    </section>
+                    
+                    <hr />
+                    
+                    <?php /* comments */ ?>
+                    <?php comments_template(); ?>
+                    
+                    <!-- <?php /* post infor */ ?>
+                    <?php the_author(); ?>
+                    <?php the_date(); ?>
+                    <?php the_category(', '); ?>
+                    <?php the_tags('', ', ', ''); ?> -->
+                        
+                </div>
             </article>
             <br />        
         </div> <!-- container -->
