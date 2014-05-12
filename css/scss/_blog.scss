@@ -191,7 +191,11 @@
         &.post .the-content{
             line-height: 1.8em;
             font-size: 1.4em;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+    
+            p{
+                margin-bottom: 50px;
+            }
         }
 
         .loop-excerpt{
