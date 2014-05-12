@@ -61,7 +61,7 @@
                 </h1>
             
                 <div id="logo">
-                    <a href="http://nerdswithcharisma.com"><div class="icon nwc-nwc-logo shake"></div></a>
+                    <a href="http://nerdswithcharisma.com/blog"><div class="icon nwc-nwc-logo shake"></div></a>
                 </div>
             
                 <nav id="navigation">
