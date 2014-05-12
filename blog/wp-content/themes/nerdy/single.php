@@ -29,7 +29,7 @@
         <div class="container">
             <article id="post-<?php the_ID(); ?>" <?php post_class('single-article clearfix'); ?>>
             
-                <div class="col-xs-8">
+                <div class="col-xs-12">
                     <br /><br />
                     <section class="pull-right dull">
                         <small>
