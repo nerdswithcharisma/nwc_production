@@ -57,7 +57,7 @@
         <div id="pushContent">
             <header id="header">
                 <h1 class="logo logo-white">
-                    <a href="/">Nerds With Charisma</a>  
+                    <a href="/blog">Nerds With Charisma</a>  
                 </h1>
             
                 <div id="logo">
