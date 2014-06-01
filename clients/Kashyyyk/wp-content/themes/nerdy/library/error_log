@@ -1,0 +1,10 @@
+[18-Nov-2012 10:15:10] PHP Fatal error:  Call to undefined function  add_options_page() in /home/dausauce/public_html/think/wp-content/themes/Nerdy/library/theme_options.php on line 13
+[18-Nov-2012 10:16:51] PHP Fatal error:  Call to undefined function  add_action() in /home/dausauce/public_html/think/wp-content/themes/Nerdy/library/theme_options.php on line 13
+[18-Nov-2012 10:17:23] PHP Fatal error:  Call to undefined function  add_action() in /home/dausauce/public_html/think/wp-content/themes/Nerdy/library/theme_options.php on line 13
+[18-Nov-2012 10:17:50] PHP Fatal error:  Call to undefined function  add_action() in /home/dausauce/public_html/think/wp-content/themes/Nerdy/library/theme_options.php on line 13
+[18-Nov-2012 10:19:42] PHP Fatal error:  Call to undefined function  add_action() in /home/dausauce/public_html/think/wp-content/themes/Nerdy/library/theme_options.php on line 13
+[18-Nov-2012 10:32:47] PHP Fatal error:  Call to undefined function  screen_icon() in /home/dausauce/public_html/think/wp-content/themes/Nerdy/library/theme_options.php on line 14
+[18-Nov-2012 11:04:45] PHP Parse error:  syntax error, unexpected T_PUBLIC in /home/dausauce/public_html/think/wp-content/themes/Nerdy/library/theme_options.php on line 40
+[18-Nov-2012 11:05:58] PHP Parse error:  syntax error, unexpected T_PUBLIC in /home/dausauce/public_html/think/wp-content/themes/Nerdy/library/theme_options.php on line 36
+[18-Nov-2012 11:06:51] PHP Fatal error:  Call to undefined function  settings_fields() in /home/dausauce/public_html/think/wp-content/themes/Nerdy/library/theme_options.php on line 20
+[18-Nov-2012 11:07:11] PHP Fatal error:  Call to undefined function  settings_fields() in /home/dausauce/public_html/think/wp-content/themes/Nerdy/library/theme_options.php on line 20

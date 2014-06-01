@@ -1,0 +1,276 @@
+/*base styles */
+	.timesheet-wrap table{ 
+		text-align: center;
+	}
+
+	.timesheet-wrap{ width: 98%; margin:auto; }
+
+	.dateInput{
+		width: 30px;
+		padding: 10px 2px;
+		text-align: center;
+	}
+
+	#date1{
+		background: url(datepicker.png) no-repeat right 3px;
+		cursor: pointer;
+	}
+
+	#date1:hover{
+		background: url(datepicker.png) no-repeat right -26px;	
+	}
+
+	.hideIt, .dp-choose-date{
+		display: none;
+	}
+
+	.showIt{
+		display: inline-block !important;
+	}
+
+	#submit{
+		margin: auto;
+	}
+
+	.warning{
+		border: 1px solid #db3830 !important;
+	}
+
+	.error, .success, .help{ 
+		position: fixed;
+		top:0px;
+		width: 100%;
+		left: 0;
+		text-align: center;
+		z-index: 9999;
+		opacity: 0.9;
+		margin: 0;
+	}
+
+	.modal{
+		display: block;
+		display: none;
+		position: fixed;
+		width: 100%;
+		height:100%;
+		background: url(b60.png) repeat;
+		top: 0;
+		left: 0;
+		text-align: center;
+	}
+
+	.wp-editor-container{
+		margin: 120px auto !important;
+		height: 400px !important;
+		width: 90% !important;
+		font-size: 16px;
+		color: #444;
+		line-height: 18px;
+		border: none !important;
+	}
+
+	.quicktags-toolbar{
+		padding: 0 !important;
+	}
+
+	.ed_button{ 
+		width: 55px !important;
+	}
+
+	.closeModal{
+		position: absolute;
+		top: 80px;
+		right: 5%;
+		color: #fff;
+		cursor: pointer !important;
+		background: #db3830;
+		padding: 6px 12px;
+	}
+
+	.closeModal:hover{
+		color: #db3830;
+		background: #fff;
+	}
+
+	.text-popup{
+		background: url(notes.png) no-repeat 14px 10px;
+		cursor: pointer;
+	}
+
+
+/* date picker styles */
+
+table.jCalendar {
+	background: #fff;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0;
+}
+table.jCalendar th {
+	background: #333;
+	color: #fff;
+	font-weight: bold;
+	padding: 3px 5px;
+}
+
+table.jCalendar tr:hover th{
+	background: #333;
+}
+
+table.jCalendar td {
+	background: #fff;
+	color: #555;
+	padding: 3px 5px;
+	text-align: center;
+	border-top: 1px solid #d7d7d7;
+}
+table.jCalendar td.other-month {
+	background: #f1f1f1;
+	color: #ccc;
+	border-right: 1px solid #d7d7d7;
+}
+table.jCalendar td.today {
+	background: #db3830;
+	color: #fff;
+	border: 1px solid #801e1a;
+}
+table.jCalendar td.selected {
+	background: #f66;
+	color: #fff;
+}
+table.jCalendar td.selected.dp-hover {
+	background: #f33;
+	color: #fff;
+}
+table.jCalendar td.dp-hover,
+table.jCalendar tr.activeWeekHover td {
+	background: #f35951;
+	color: #fff;
+	border-color: #f35951;
+}
+table.jCalendar tr.selectedWeek td {
+	background: #f66;
+	color: #fff;
+}
+table.jCalendar td.disabled, table.jCalendar td.disabled.dp-hover {
+	background: #f5f5f5;
+	color: #ccc;
+	border-left: 1px solid #d7d7d7;
+}
+table.jCalendar td.unselectable,
+table.jCalendar td.unselectable:hover,
+table.jCalendar td.unselectable.dp-hover {
+	background: #bbb;
+	color: #888;
+}
+
+/* For the popup */
+
+/* NOTE - you will probably want to style a.dp-choose-date - see how I did it in demo.css */
+
+div.dp-popup {
+	position: relative;
+	background: #ccc;
+	font-size: 10px;
+	font-family: arial, sans-serif;
+	padding: 1px;
+	width: 171px;
+	line-height: 1.2em;
+	box-shadow: 0px 1px 3px #000;
+}
+div#dp-popup {
+	position: absolute;
+	z-index: 199;
+}
+div.dp-popup h2 {
+	background: #db3830;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-shadow: 0px 1px 1px #891b16;
+}
+a#dp-close {
+	font-size: 11px;
+	padding: 4px 0;
+	text-align: center;
+	display: block;
+}
+a#dp-close:hover {
+	text-decoration: underline;
+}
+div.dp-popup a {
+	color: #fff;
+	text-decoration: none;
+	padding: 3px 2px 0;
+}
+div.dp-popup a:hover{
+	opacity: 0.8;
+	color: #fff;
+}
+div.dp-popup div.dp-nav-prev {
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	width: 100px;
+}
+div.dp-popup div.dp-nav-prev a {
+	float: left;
+}
+/* Opera needs the rules to be this specific otherwise it doesn't change the cursor back to pointer after you have disabled and re-enabled a link */
+div.dp-popup div.dp-nav-prev a, div.dp-popup div.dp-nav-next a {
+	cursor: pointer;
+}
+div.dp-popup div.dp-nav-prev a.disabled, div.dp-popup div.dp-nav-next a.disabled {
+	cursor: default;
+}
+div.dp-popup div.dp-nav-next {
+	position: absolute;
+	top: 2px;
+	right: 4px;
+	width: 100px;
+}
+div.dp-popup div.dp-nav-next a {
+	float: right;
+}
+div.dp-popup a.disabled {
+	cursor: default;
+	color: #fff;
+	opacity: 0.4;
+}
+div.dp-popup td {
+	cursor: pointer;
+}
+div.dp-popup td.disabled {
+	cursor: default;
+}
+
+/******************************************
+// Media Queries
+******************************************/
+@media only screen and (max-width: 479px) {
+	.timesheet-wrap table{ font-size: 9px;}
+	.timesheet-wrap table input{ padding-right: 0; width: 80%; padding-right: 0; }
+	.timesheet-wrap table td{ padding: 10px 1px !important; }
+	.timesheet-wrap table .button{ font-size: 12px; width: 300px; }
+
+	.timesheet-wrap button{ font-size: 16px; width: 100%; margin: auto; display: block; }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 766px) {
+	.timesheet-wrap table{ font-size: 11px;}
+	.timesheet-wrap table input{ padding-right: 0; width: 100%; }
+	.timesheet-wrap button{ width: 100%; margin:auto; }
+}
+
+@media only screen and (min-width: 768px) {
+	.timesheet-wrap table input{
+		padding-right: 0;
+		width: 100%;
+	}
+
+	.no_wrap{ white-space: nowrap; }
+
+	.dateInput{ width: 35px !important; }
+}
